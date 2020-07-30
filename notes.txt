@@ -1,5 +1,6 @@
 1. Download the exercise
+1.a) navigate to that folder
 2. Install the dependencies (npm i)
 3. Do the solution 
 4. Test the exercise (npm test)
-5. Submit exercise (exercism submit ./path)
+5. Submit exercise (exercism submit ./path to the solution file)
