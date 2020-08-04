@@ -9,15 +9,15 @@ describe("Resistor Colors", () => {
 		expect(decodedValue(["blue", "grey"])).toEqual(68);
 	});
 
-	xtest("Yellow and violet", () => {
+	test("Yellow and violet", () => {
 		expect(decodedValue(["yellow", "violet"])).toEqual(47);
 	});
 
-	xtest("Orange and orange", () => {
+	test("Orange and orange", () => {
 		expect(decodedValue(["orange", "orange"])).toEqual(33);
 	});
 
-	xtest("Ignore additional colors", () => {
+	test("Ignore additional colors", () => {
 		expect(decodedValue(["green", "brown", "orange"])).toEqual(51);
 	});
 });
