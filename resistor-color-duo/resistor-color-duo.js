@@ -10,24 +10,19 @@ export const COLORS = [
 	"grey",
 	"white"
 ];
-
+// ["brown", "black"] => 10
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 // indexOf will return the first match
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 // takes the number to begin at and how many positions to remove  .splice(3, 1) --> would remove one element, at index 3
 
-export const testColors = arrayOfColors => {
-	return Number(
-		arrayOfColors.map(eachColor => {
-			COLORS.indexOf(eachColor)
-				.join("")
-				.slice(0, 2);
-		})
-	);
-};
+export const decodedValue = colors => {
+	const index1 = COLORS.indexOf(colors[0]);
+	const index2 = COLORS.indexOf(colors[1]);
 
-export const decodeValue = testColors;
+	return Number(`${COLORS.indexOf(colors[0])}${index2}`);
+};
 
 // console.log(decodeValue);
 
